@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Nama Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header>
+    <img src="img/profile.jpg" alt="Foto Profil" class="profile-pic" />
+
+  <h1>Halo, Saya Muhammad Faiz Shadiq</h1>
+  <p>Mahasiswa Teknologi Informasi</p>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profile">Profil</a></li>
+      <li><a href="#skills">Kemampuan</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+  <button id="darkModeBtn">🌙</button>
+</header>
+
+
+ <section id="profile" class="profile">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya mahasiswa semester 3 jurusan Teknologi informasi yang sedang belajar pengembangan web.
+      Saya tertarik dengan teknologi, desain web, dan keamanan jaringan.
+    </p>
+  </section>
+
+  
+  <section id="skills" class="skills">
+    <h2>Kemampuan</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Desain UI/UX dasar (Figma)</li>
+      <li>Jaringan komputer & konfigurasi</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="gallery">
+  <h2>Foto Para Apostel</h2>
+  <div class="gallery-container">
+    <img src="img/nathaniel.jpg" alt="Foto 1">
+    <img src="img/simon.jpg" alt="Foto 2">
+    <img src="img/tadeo.jpg" alt="Foto 3">
+  </div>
+</section>
+
+
+  <section id="contact" class="contact">
+    <h2>Kontak</h2>
+    <form id="formKontak">
+      <input type="text" id="nama" placeholder="Nama" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="pesan" placeholder="Tulis pesan..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+    <p id="notif"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Muhammad Faiz Shadiq. Dibuat dengan ❤️ dan semangat belajar.</p>
+  </footer>
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
